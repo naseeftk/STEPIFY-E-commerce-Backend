@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "Hash": "IoSM7w46rZmqU7VMWcjV00cn7MzXF6+VW+KYWGveyMw=",
+  "Source": "STEPIFY",
+  "BasePath": "_content/STEPIFY",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "STEPIFY\\wwwroot",
+      "Source": "STEPIFY",
+      "ContentRoot": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\",
+      "BasePath": "_content/STEPIFY",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\images\\7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg",
+      "SourceId": "STEPIFY",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\",
+      "BasePath": "_content/STEPIFY",
+      "RelativePath": "images/7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hhwkdrgro5",
+      "Integrity": "dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\images\\cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg",
+      "SourceId": "STEPIFY",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\",
+      "BasePath": "_content/STEPIFY",
+      "RelativePath": "images/cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hhwkdrgro5",
+      "Integrity": "dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\images\\d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg",
+      "SourceId": "STEPIFY",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\",
+      "BasePath": "_content/STEPIFY",
+      "RelativePath": "images/d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c1woqvi5wf",
+      "Integrity": "ME5IzG2zeoNQcn4m12Wak1MlVoTEbpVlusZ+90ss0Ik=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.hhwkdrgro5.jpeg",
+      "AssetFile": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\images\\7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 02:03:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hhwkdrgro5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI="
+        }
+      ]
+    },
+    {
+      "Route": "images/7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg",
+      "AssetFile": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\images\\7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 02:03:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI="
+        }
+      ]
+    },
+    {
+      "Route": "images/cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.hhwkdrgro5.jpeg",
+      "AssetFile": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\images\\cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 02:00:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hhwkdrgro5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI="
+        }
+      ]
+    },
+    {
+      "Route": "images/cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg",
+      "AssetFile": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\images\\cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 02:00:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI="
+        }
+      ]
+    },
+    {
+      "Route": "images/d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.c1woqvi5wf.jpeg",
+      "AssetFile": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\images\\d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3502"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ME5IzG2zeoNQcn4m12Wak1MlVoTEbpVlusZ+90ss0Ik=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 06:16:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c1woqvi5wf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ME5IzG2zeoNQcn4m12Wak1MlVoTEbpVlusZ+90ss0Ik="
+        }
+      ]
+    },
+    {
+      "Route": "images/d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg",
+      "AssetFile": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\images\\d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3502"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ME5IzG2zeoNQcn4m12Wak1MlVoTEbpVlusZ+90ss0Ik=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 06:16:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ME5IzG2zeoNQcn4m12Wak1MlVoTEbpVlusZ+90ss0Ik="
+        }
+      ]
+    }
+  ]
+}

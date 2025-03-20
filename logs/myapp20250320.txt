@@ -1,0 +1,1413 @@
+2025-03-20 09:29:53.502 +05:30 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-20 09:29:54.046 +05:30 [INF] Now listening on: https://localhost:7294
+2025-03-20 09:29:54.050 +05:30 [INF] Now listening on: http://localhost:5174
+2025-03-20 09:29:54.209 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 09:29:54.226 +05:30 [INF] Hosting environment: Development
+2025-03-20 09:29:54.229 +05:30 [INF] Content root path: C:\Users\DELL\OneDrive\Desktop\Ecommerce Dotnet\STEPIFY
+2025-03-20 09:29:57.201 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - null null
+2025-03-20 09:29:57.603 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - 200 null text/html;charset=utf-8 414.6362ms
+2025-03-20 09:29:57.654 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.js - null null
+2025-03-20 09:29:57.654 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-20 09:29:57.654 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - null null
+2025-03-20 09:29:57.663 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.js - 200 null application/javascript;charset=utf-8 9.2491ms
+2025-03-20 09:29:57.654 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.css - null null
+2025-03-20 09:29:57.715 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 61.9242ms
+2025-03-20 09:29:57.744 +05:30 [INF] The file /index.css was not modified
+2025-03-20 09:29:57.748 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.css - 304 null text/css 94.2971ms
+2025-03-20 09:29:57.878 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - 200 null text/javascript; charset=UTF-8 224.155ms
+2025-03-20 09:29:57.968 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - null null
+2025-03-20 09:29:58.062 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 94.8105ms
+2025-03-20 09:30:46.204 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:30:46.204 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:30:46.240 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:30:46.240 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:30:46.242 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:30:46.243 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:30:46.336 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:30:46.336 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:46.357 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:30:46.357 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:30:47.019 +05:30 [WRN] Entity 'Products' has a global query filter defined and is the required end of a relationship with the entity 'CartItems'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-03-20 09:30:47.023 +05:30 [WRN] Entity 'Products' has a global query filter defined and is the required end of a relationship with the entity 'WishList'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-03-20 09:30:47.791 +05:30 [INF] Executed DbCommand (39ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:30:47.791 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:30:47.907 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:30:47.907 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:30:47.930 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:30:47.931 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:30:47.931 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:30:47.931 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 1567.3244ms
+2025-03-20 09:30:47.931 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:30:47.931 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 1566.8905ms
+2025-03-20 09:30:47.942 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:30:47.948 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:30:47.944 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:30:47.945 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:30:47.946 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:30:47.947 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:47.942 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:30:47.950 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:30:47.951 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:30:47.953 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:30:47.955 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:30:47.957 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:47.957 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 1753.162ms
+2025-03-20 09:30:47.957 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 1753.9894ms
+2025-03-20 09:30:47.958 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:30:47.959 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:30:47.961 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:47.962 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:30:47.973 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:30:47.974 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:30:48.042 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:30:48.042 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:30:48.049 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:30:48.042 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:30:48.048 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:30:48.053 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:30:48.050 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:30:48.054 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 77.5667ms
+2025-03-20 09:30:48.056 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 80.8104ms
+2025-03-20 09:30:48.059 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:30:48.058 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 86.1724ms
+2025-03-20 09:30:48.059 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:30:48.055 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:30:48.060 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:30:48.061 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:48.063 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:30:48.064 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:30:48.061 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:30:48.065 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 134.8473ms
+2025-03-20 09:30:48.066 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 87.634ms
+2025-03-20 09:30:48.068 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:30:48.069 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:30:48.070 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 139.5262ms
+2025-03-20 09:30:48.070 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:30:48.071 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 140.1737ms
+2025-03-20 09:30:48.073 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:30:48.077 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:48.079 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:30:48.079 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:30:48.083 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:48.086 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:30:48.087 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 156.821ms
+2025-03-20 09:30:48.087 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:30:48.088 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:30:48.089 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:30:48.090 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:30:48.093 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:48.096 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:30:48.099 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:30:48.099 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:30:48.104 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:30:48.106 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:30:48.110 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:30:48.112 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:30:48.112 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 16.6101ms
+2025-03-20 09:30:48.115 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:30:48.116 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:48.116 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 14.757ms
+2025-03-20 09:30:48.118 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 11.4826ms
+2025-03-20 09:30:48.119 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 60.2549ms
+2025-03-20 09:30:48.094 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:30:48.120 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:30:48.121 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:48.126 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:30:48.120 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:30:48.128 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:30:48.128 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 60.1656ms
+2025-03-20 09:30:48.130 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 70.0642ms
+2025-03-20 09:30:48.131 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:30:48.131 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:30:48.137 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 13.3326ms
+2025-03-20 09:30:48.138 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:48.139 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:30:48.139 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:30:48.140 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:30:48.142 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:30:48.142 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 82.714ms
+2025-03-20 09:30:48.147 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:30:48.144 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:30:48.150 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:30:48.150 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:30:48.151 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 7.7901ms
+2025-03-20 09:30:48.152 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:30:48.153 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:30:48.157 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:30:48.153 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:48.158 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:30:48.160 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:30:48.161 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 41.4599ms
+2025-03-20 09:30:48.162 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:30:48.164 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 9.2629ms
+2025-03-20 09:30:48.167 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:48.168 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:30:48.168 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:30:48.169 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 30.7854ms
+2025-03-20 09:30:48.174 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:30:48.177 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:30:48.178 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 8.3104ms
+2025-03-20 09:30:48.180 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:30:48.181 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 28.7013ms
+2025-03-20 09:31:52.733 +05:30 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-20 09:31:53.008 +05:30 [INF] Now listening on: https://localhost:7294
+2025-03-20 09:31:53.013 +05:30 [INF] Now listening on: http://localhost:5174
+2025-03-20 09:31:53.132 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 09:31:53.134 +05:30 [INF] Hosting environment: Development
+2025-03-20 09:31:53.135 +05:30 [INF] Content root path: C:\Users\DELL\OneDrive\Desktop\Ecommerce Dotnet\STEPIFY
+2025-03-20 09:31:55.111 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - null null
+2025-03-20 09:31:55.563 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - 200 null text/html;charset=utf-8 466.394ms
+2025-03-20 09:31:55.624 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-20 09:31:55.624 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.js - null null
+2025-03-20 09:31:55.637 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - null null
+2025-03-20 09:31:55.643 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.js - 200 null application/javascript;charset=utf-8 18.6872ms
+2025-03-20 09:31:55.657 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 33.5826ms
+2025-03-20 09:31:55.758 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.1871ms
+2025-03-20 09:31:55.838 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - null null
+2025-03-20 09:31:55.900 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.8167ms
+2025-03-20 09:31:58.481 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:31:58.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:31:58.499 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:31:58.500 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:31:58.502 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:31:58.503 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:31:58.652 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:31:58.652 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:31:58.695 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:31:58.696 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:00.840 +05:30 [WRN] Entity 'Products' has a global query filter defined and is the required end of a relationship with the entity 'CartItems'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-03-20 09:32:00.844 +05:30 [WRN] Entity 'Products' has a global query filter defined and is the required end of a relationship with the entity 'WishList'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-03-20 09:32:02.274 +05:30 [INF] Executed DbCommand (93ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:32:02.274 +05:30 [INF] Executed DbCommand (79ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:32:02.501 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:02.501 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:02.543 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:02.546 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:02.546 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:32:02.546 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:32:02.548 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 3838.0493ms
+2025-03-20 09:32:02.548 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 3847.0371ms
+2025-03-20 09:32:02.553 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:32:02.553 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:32:02.556 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:32:02.560 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:32:02.562 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:02.564 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:02.566 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:32:02.567 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:32:02.569 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:32:02.570 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:32:02.582 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:02.582 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:02.584 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:02.586 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:02.587 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:02.590 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:02.592 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 4110.3002ms
+2025-03-20 09:32:02.592 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 4110.4834ms
+2025-03-20 09:32:02.592 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:02.594 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:02.761 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:32:02.761 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:32:02.764 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:32:02.771 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:32:02.771 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:02.773 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:02.777 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:02.774 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:02.791 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 193.241ms
+2025-03-20 09:32:02.788 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:32:02.796 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:02.795 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 197.931ms
+2025-03-20 09:32:02.797 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:02.780 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 163.4323ms
+2025-03-20 09:32:02.783 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:32:02.779 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 166.784ms
+2025-03-20 09:32:02.798 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:02.800 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:32:02.802 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 259.2566ms
+2025-03-20 09:32:02.803 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:02.807 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:32:02.809 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:02.814 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:32:02.815 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:02.818 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:32:02.818 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:32:02.823 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 277.5985ms
+2025-03-20 09:32:02.824 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:32:02.826 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 280.1172ms
+2025-03-20 09:32:02.827 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:32:02.830 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 284.5925ms
+2025-03-20 09:32:02.831 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:32:02.832 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:02.838 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:02.844 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:02.854 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:02.855 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:02.859 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:02.861 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:02.871 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:32:02.877 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:32:02.885 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:32:02.863 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:02.888 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:02.890 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:02.904 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:32:02.905 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 36.564ms
+2025-03-20 09:32:02.895 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:02.901 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 34.4774ms
+2025-03-20 09:32:02.910 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:02.911 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:02.915 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 40.2471ms
+2025-03-20 09:32:02.918 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:32:02.920 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 23.5637ms
+2025-03-20 09:32:02.921 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 124.1589ms
+2025-03-20 09:32:02.918 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:02.922 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:02.923 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:02.925 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:32:02.927 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:02.933 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 144.5613ms
+2025-03-20 09:32:02.936 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:32:02.937 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 154.8174ms
+2025-03-20 09:32:02.938 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:32:02.939 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 141.9716ms
+2025-03-20 09:32:02.944 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:32:02.950 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:02.963 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:02.975 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:02.975 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:02.986 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:32:02.992 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:32:03.000 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:03.002 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:03.004 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 25.5146ms
+2025-03-20 09:32:03.006 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 19.6293ms
+2025-03-20 09:32:03.007 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:03.008 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:03.009 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:03.012 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 94.7192ms
+2025-03-20 09:32:03.016 +05:30 [INF] CORS policy execution failed.
+2025-03-20 09:32:03.018 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 96.1376ms
+2025-03-20 09:32:03.023 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-03-20 09:32:03.031 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:03.033 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:03.041 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:32:03.050 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:03.052 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 16.2195ms
+2025-03-20 09:32:03.054 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:03.055 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 47.464ms
+2025-03-20 09:32:23.298 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:32:23.299 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:32:23.309 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/WishList/getWishlist - null null
+2025-03-20 09:32:23.303 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:23.342 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.301 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:23.333 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.320 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:32:23.329 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:32:23.337 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:23.344 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.346 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.349 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - 204 null null 49.8127ms
+2025-03-20 09:32:23.350 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.351 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - 204 null null 52.753ms
+2025-03-20 09:32:23.353 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.355 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.356 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.357 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/WishList/getWishlist - 204 null null 49.3004ms
+2025-03-20 09:32:23.358 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 204 null null 55.035ms
+2025-03-20 09:32:23.360 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:23.388 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:23.361 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 204 null null 59.6706ms
+2025-03-20 09:32:23.363 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/WishList/getWishlist - null null
+2025-03-20 09:32:23.364 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - 204 null null 45.2706ms
+2025-03-20 09:32:23.365 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - 204 null null 37.5361ms
+2025-03-20 09:32:23.367 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 204 null null 29.0929ms
+2025-03-20 09:32:23.387 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:32:23.387 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/WishList/getWishlist - null null
+2025-03-20 09:32:23.395 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.397 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.402 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.414 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.416 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.419 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 204 null null 58.2533ms
+2025-03-20 09:32:23.420 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/WishList/getWishlist - 204 null null 56.7566ms
+2025-03-20 09:32:23.546 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-03-20 09:32:23.546 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-03-20 09:32:23.546 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-03-20 09:32:23.568 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+2025-03-20 09:32:23.571 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+2025-03-20 09:32:23.576 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+2025-03-20 09:32:23.581 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:23.584 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:23.586 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:23.587 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2025-03-20 09:32:23.587 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:23.600 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:32:23.606 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:32:23.608 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-03-20 09:32:23.609 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:23.611 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:23.615 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 23.4622ms
+2025-03-20 09:32:23.618 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Authentication/RefreshToken - null null
+2025-03-20 09:32:23.620 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:23.615 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/WishList/getWishlist - null null
+2025-03-20 09:32:23.619 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 24.1394ms
+2025-03-20 09:32:23.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:32:23.612 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/WishList/getWishlist - 401 0 null 224.3631ms
+2025-03-20 09:32:23.617 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:23.623 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.625 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 236.9544ms
+2025-03-20 09:32:23.626 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.636 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Authentication/RefreshToken - 204 null null 18.2892ms
+2025-03-20 09:32:23.627 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:23.630 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.638 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7294/api/Authentication/RefreshToken - application/json 63
+2025-03-20 09:32:23.641 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-03-20 09:32:23.646 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 258.9269ms
+2025-03-20 09:32:23.635 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.648 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-03-20 09:32:23.655 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+2025-03-20 09:32:23.651 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.660 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-03-20 09:32:23.664 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+2025-03-20 09:32:23.668 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-03-20 09:32:23.670 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2025-03-20 09:32:23.672 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+2025-03-20 09:32:23.673 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:23.675 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+2025-03-20 09:32:23.677 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-03-20 09:32:23.677 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:23.678 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:23.680 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.AuthenticationController.RefreshToken (STEPIFY)'
+2025-03-20 09:32:23.681 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/WishList/getWishlist - 401 0 null 66.1097ms
+2025-03-20 09:32:23.684 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:23.697 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:32:23.703 +05:30 [INF] Route matched with {action = "RefreshToken", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshToken(RefreshTokenRequest) on controller STEPIFY.Controllers.AuthenticationController (STEPIFY).
+2025-03-20 09:32:23.709 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:32:23.711 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:23.714 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:23.716 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 27.811ms
+2025-03-20 09:32:23.718 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:32:23.718 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 13.9586ms
+2025-03-20 09:32:23.720 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:23.720 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:23.723 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.724 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:23.726 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.727 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 105.7637ms
+2025-03-20 09:32:23.729 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-03-20 09:32:23.729 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 112.7463ms
+2025-03-20 09:32:23.731 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-03-20 09:32:23.736 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+2025-03-20 09:32:23.740 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+2025-03-20 09:32:23.741 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:23.742 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:23.743 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:23.744 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:23.750 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:32:23.755 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:32:23.759 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:23.760 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:23.761 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 15.8956ms
+2025-03-20 09:32:23.762 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 14.3519ms
+2025-03-20 09:32:23.764 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:32:23.764 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:23.765 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:32:23.765 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:23.768 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.769 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 50.8797ms
+2025-03-20 09:32:23.772 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 52.6339ms
+2025-03-20 09:32:23.777 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[RefreshToken] = @__refreshToken_0
+2025-03-20 09:32:23.774 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-03-20 09:32:23.771 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:23.787 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+2025-03-20 09:32:23.788 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-03-20 09:32:23.789 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:23.791 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '19-03-2025 18:19:22', Current time (UTC): '20-03-2025 04:02:23'.
+2025-03-20 09:32:23.792 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:23.793 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:23.797 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:23.801 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:32:23.807 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:23.808 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:32:23.811 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 15.6304ms
+2025-03-20 09:32:23.814 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:23.815 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:32:23.816 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 12.9802ms
+2025-03-20 09:32:23.819 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 55.6306ms
+2025-03-20 09:32:23.820 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:32:23.824 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 59.2513ms
+2025-03-20 09:32:23.969 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [RefreshToken] = @p0, [RefreshTokenExpiry] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-03-20 09:32:24.006 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:24.018 +05:30 [INF] Executed action STEPIFY.Controllers.AuthenticationController.RefreshToken (STEPIFY) in 308.176ms
+2025-03-20 09:32:24.021 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.AuthenticationController.RefreshToken (STEPIFY)'
+2025-03-20 09:32:24.024 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7294/api/Authentication/RefreshToken - 200 null application/json; charset=utf-8 385.836ms
+2025-03-20 09:32:39.583 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Authentication/Login - null null
+2025-03-20 09:32:39.587 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:39.589 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Authentication/Login - 204 null null 5.5851ms
+2025-03-20 09:32:39.591 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7294/api/Authentication/Login - application/json 46
+2025-03-20 09:32:39.594 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:39.595 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.AuthenticationController.Login (STEPIFY)'
+2025-03-20 09:32:39.600 +05:30 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(STEPIFY.DTOs.RequestDTOs.LoginDTO) on controller STEPIFY.Controllers.AuthenticationController (STEPIFY).
+2025-03-20 09:32:39.623 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__Email_0
+2025-03-20 09:32:39.629 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__Email_0
+2025-03-20 09:32:40.004 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [RefreshToken] = @p0, [RefreshTokenExpiry] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-03-20 09:32:40.009 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[STEPIFY.DTOs.ResponseDTOs.LoginResponseDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-20 09:32:40.019 +05:30 [INF] Executed action STEPIFY.Controllers.AuthenticationController.Login (STEPIFY) in 417.7732ms
+2025-03-20 09:32:40.021 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.AuthenticationController.Login (STEPIFY)'
+2025-03-20 09:32:40.023 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7294/api/Authentication/Login - 200 null application/json; charset=utf-8 432.1948ms
+2025-03-20 09:32:40.079 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:32:40.080 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/User/TogetAllUsers - null null
+2025-03-20 09:32:40.083 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Order/CalculateRevenue - null null
+2025-03-20 09:32:40.083 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Order/GetAllOrders - null null
+2025-03-20 09:32:40.081 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Order/GetAllOrders - null null
+2025-03-20 09:32:40.083 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.083 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Order/CalculateRevenue - null null
+2025-03-20 09:32:40.089 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.095 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.097 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.098 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/ProductViewAdmin - 204 null null 19.5739ms
+2025-03-20 09:32:40.101 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:32:40.104 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Order/CalculateRevenue - 204 null null 20.3353ms
+2025-03-20 09:32:40.104 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Order/GetAllOrders - 204 null null 20.6564ms
+2025-03-20 09:32:40.105 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Order/GetAllOrders - 204 null null 23.9138ms
+2025-03-20 09:32:40.102 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.083 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:32:40.083 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/User/TogetAllUsers - null null
+2025-03-20 09:32:40.087 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.108 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Order/CalculateRevenue - null null
+2025-03-20 09:32:40.112 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.109 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Order/GetAllOrders - null null
+2025-03-20 09:32:40.124 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Order/CalculateRevenue - 204 null null 40.5663ms
+2025-03-20 09:32:40.126 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.129 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.129 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/User/TogetAllUsers - 204 null null 49.7563ms
+2025-03-20 09:32:40.132 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/User/TogetAllUsers - null null
+2025-03-20 09:32:40.132 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.135 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.140 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/ProductViewAdmin - 204 null null 56.6526ms
+2025-03-20 09:32:40.141 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/User/TogetAllUsers - 204 null null 57.6734ms
+2025-03-20 09:32:40.145 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.148 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:32:40.148 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.OrderController.RevenueCalculation (STEPIFY)'
+2025-03-20 09:32:40.148 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.OrderController.GetAllOrders (STEPIFY)'
+2025-03-20 09:32:40.154 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.UserController.GetFull (STEPIFY)'
+2025-03-20 09:32:40.157 +05:30 [INF] Route matched with {action = "AdminViewProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AdminViewProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:40.158 +05:30 [INF] Route matched with {action = "RevenueCalculation", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RevenueCalculation() on controller STEPIFY.Controllers.OrderController (STEPIFY).
+2025-03-20 09:32:40.159 +05:30 [INF] Route matched with {action = "GetFull", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFull() on controller STEPIFY.Controllers.UserController (STEPIFY).
+2025-03-20 09:32:40.160 +05:30 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller STEPIFY.Controllers.OrderController (STEPIFY).
+2025-03-20 09:32:40.184 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Role] = N'User'
+2025-03-20 09:32:40.193 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.UserViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:40.198 +05:30 [INF] Executed action STEPIFY.Controllers.UserController.GetFull (STEPIFY) in 34.3188ms
+2025-03-20 09:32:40.199 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.UserController.GetFull (STEPIFY)'
+2025-03-20 09:32:40.200 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/User/TogetAllUsers - null null
+2025-03-20 09:32:40.201 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/User/TogetAllUsers - 200 null application/json; charset=utf-8 69.0608ms
+2025-03-20 09:32:40.200 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+FROM [OrderItems] AS [o]
+2025-03-20 09:32:40.205 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.214 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName], [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName], [u0].[Id], [u0].[Email], [u0].[IsBlocked], [u0].[Password], [u0].[PhoneNo], [u0].[RefreshToken], [u0].[RefreshTokenExpiry], [u0].[Role], [u0].[UserName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+LEFT JOIN [Users] AS [u] ON [p].[CreatedBy] = [u].[Id]
+LEFT JOIN [Users] AS [u0] ON [p].[ModifiedBy] = [u0].[Id]
+2025-03-20 09:32:40.220 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:40.217 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.UserController.GetFull (STEPIFY)'
+2025-03-20 09:32:40.222 +05:30 [INF] Route matched with {action = "GetFull", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFull() on controller STEPIFY.Controllers.UserController (STEPIFY).
+2025-03-20 09:32:40.227 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Role] = N'User'
+2025-03-20 09:32:40.232 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.UserViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:40.234 +05:30 [INF] Executed action STEPIFY.Controllers.UserController.GetFull (STEPIFY) in 9.7522ms
+2025-03-20 09:32:40.236 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.AdminProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:40.237 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.UserController.GetFull (STEPIFY)'
+2025-03-20 09:32:40.236 +05:30 [INF] Executed action STEPIFY.Controllers.OrderController.RevenueCalculation (STEPIFY) in 74.4091ms
+2025-03-20 09:32:40.239 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Order/CalculateRevenue - null null
+2025-03-20 09:32:40.241 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/User/TogetAllUsers - 200 null application/json; charset=utf-8 40.974ms
+2025-03-20 09:32:40.242 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.OrderController.RevenueCalculation (STEPIFY)'
+2025-03-20 09:32:40.244 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.248 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Order/CalculateRevenue - 200 null application/json; charset=utf-8 139.6851ms
+2025-03-20 09:32:40.249 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.OrderController.RevenueCalculation (STEPIFY)'
+2025-03-20 09:32:40.258 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY) in 98.6267ms
+2025-03-20 09:32:40.259 +05:30 [INF] Route matched with {action = "RevenueCalculation", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RevenueCalculation() on controller STEPIFY.Controllers.OrderController (STEPIFY).
+2025-03-20 09:32:40.260 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:32:40.260 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:32:40.264 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.265 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - 200 null application/json; charset=utf-8 164.2231ms
+2025-03-20 09:32:40.266 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+FROM [OrderItems] AS [o]
+2025-03-20 09:32:40.269 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[AddressId], [o].[OrderDate], [o].[Status], [o].[TotalAmount], [o].[TransactionId], [o].[UserId], [a].[Id], [a].[FullName], [a].[HouseName], [a].[IsDeleted], [a].[LandMark], [a].[PhoneNumber], [a].[Pincode], [a].[Place], [a].[UserId], [s].[Id], [s].[OrderId], [s].[ProductId], [s].[ProductImage], [s].[ProductName], [s].[Quantity], [s].[TotalPrice], [s].[Id0], [s].[Brand], [s].[CategoryId], [s].[Color], [s].[CreatedBy], [s].[CreatedDate], [s].[Details], [s].[Image], [s].[IsDeleted], [s].[ModifiedBy], [s].[ModifiedDate], [s].[OldPrice], [s].[Price], [s].[ProductName0], [s].[Seller], [s].[Stock]
+FROM [Order] AS [o]
+INNER JOIN [Address] AS [a] ON [o].[AddressId] = [a].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[OrderId], [o0].[ProductId], [o0].[ProductImage], [o0].[ProductName], [o0].[Quantity], [o0].[TotalPrice], [p0].[Id] AS [Id0], [p0].[Brand], [p0].[CategoryId], [p0].[Color], [p0].[CreatedBy], [p0].[CreatedDate], [p0].[Details], [p0].[Image], [p0].[IsDeleted], [p0].[ModifiedBy], [p0].[ModifiedDate], [p0].[OldPrice], [p0].[Price], [p0].[ProductName] AS [ProductName0], [p0].[Seller], [p0].[Stock]
+    FROM [OrderItems] AS [o0]
+    LEFT JOIN (
+        SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+        FROM [Products] AS [p]
+        WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ) AS [p0] ON [o0].[ProductId] = [p0].[Id]
+) AS [s] ON [o].[Id] = [s].[OrderId]
+ORDER BY [o].[Id], [a].[Id], [s].[Id]
+2025-03-20 09:32:40.269 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:32:40.273 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:40.275 +05:30 [INF] Route matched with {action = "AdminViewProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AdminViewProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:40.276 +05:30 [INF] Executed action STEPIFY.Controllers.OrderController.RevenueCalculation (STEPIFY) in 14.476ms
+2025-03-20 09:32:40.279 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.OrderController.RevenueCalculation (STEPIFY)'
+2025-03-20 09:32:40.282 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName], [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName], [u0].[Id], [u0].[Email], [u0].[IsBlocked], [u0].[Password], [u0].[PhoneNo], [u0].[RefreshToken], [u0].[RefreshTokenExpiry], [u0].[Role], [u0].[UserName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+LEFT JOIN [Users] AS [u] ON [p].[CreatedBy] = [u].[Id]
+LEFT JOIN [Users] AS [u0] ON [p].[ModifiedBy] = [u0].[Id]
+2025-03-20 09:32:40.282 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Order/CalculateRevenue - 200 null application/json; charset=utf-8 43.0698ms
+2025-03-20 09:32:40.332 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.AdminProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:40.338 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY) in 59.662ms
+2025-03-20 09:32:40.340 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:32:40.341 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - 200 null application/json; charset=utf-8 81.9891ms
+2025-03-20 09:32:40.394 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ViewUserOrderDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:40.407 +05:30 [INF] Executed action STEPIFY.Controllers.OrderController.GetAllOrders (STEPIFY) in 240.922ms
+2025-03-20 09:32:40.409 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Order/GetAllOrders - null null
+2025-03-20 09:32:40.409 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.OrderController.GetAllOrders (STEPIFY)'
+2025-03-20 09:32:40.412 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:40.414 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Order/GetAllOrders - 200 null application/json; charset=utf-8 304.5849ms
+2025-03-20 09:32:40.415 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.OrderController.GetAllOrders (STEPIFY)'
+2025-03-20 09:32:40.419 +05:30 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller STEPIFY.Controllers.OrderController (STEPIFY).
+2025-03-20 09:32:40.425 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[AddressId], [o].[OrderDate], [o].[Status], [o].[TotalAmount], [o].[TransactionId], [o].[UserId], [a].[Id], [a].[FullName], [a].[HouseName], [a].[IsDeleted], [a].[LandMark], [a].[PhoneNumber], [a].[Pincode], [a].[Place], [a].[UserId], [s].[Id], [s].[OrderId], [s].[ProductId], [s].[ProductImage], [s].[ProductName], [s].[Quantity], [s].[TotalPrice], [s].[Id0], [s].[Brand], [s].[CategoryId], [s].[Color], [s].[CreatedBy], [s].[CreatedDate], [s].[Details], [s].[Image], [s].[IsDeleted], [s].[ModifiedBy], [s].[ModifiedDate], [s].[OldPrice], [s].[Price], [s].[ProductName0], [s].[Seller], [s].[Stock]
+FROM [Order] AS [o]
+INNER JOIN [Address] AS [a] ON [o].[AddressId] = [a].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[OrderId], [o0].[ProductId], [o0].[ProductImage], [o0].[ProductName], [o0].[Quantity], [o0].[TotalPrice], [p0].[Id] AS [Id0], [p0].[Brand], [p0].[CategoryId], [p0].[Color], [p0].[CreatedBy], [p0].[CreatedDate], [p0].[Details], [p0].[Image], [p0].[IsDeleted], [p0].[ModifiedBy], [p0].[ModifiedDate], [p0].[OldPrice], [p0].[Price], [p0].[ProductName] AS [ProductName0], [p0].[Seller], [p0].[Stock]
+    FROM [OrderItems] AS [o0]
+    LEFT JOIN (
+        SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+        FROM [Products] AS [p]
+        WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ) AS [p0] ON [o0].[ProductId] = [p0].[Id]
+) AS [s] ON [o].[Id] = [s].[OrderId]
+ORDER BY [o].[Id], [a].[Id], [s].[Id]
+2025-03-20 09:32:40.433 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ViewUserOrderDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:40.441 +05:30 [INF] Executed action STEPIFY.Controllers.OrderController.GetAllOrders (STEPIFY) in 20.2367ms
+2025-03-20 09:32:40.443 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.OrderController.GetAllOrders (STEPIFY)'
+2025-03-20 09:32:40.445 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Order/GetAllOrders - 200 null application/json; charset=utf-8 36.5878ms
+2025-03-20 09:32:43.596 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:32:43.599 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:43.600 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:32:43.602 +05:30 [INF] Route matched with {action = "AdminViewProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AdminViewProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:43.609 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName], [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName], [u0].[Id], [u0].[Email], [u0].[IsBlocked], [u0].[Password], [u0].[PhoneNo], [u0].[RefreshToken], [u0].[RefreshTokenExpiry], [u0].[Role], [u0].[UserName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+LEFT JOIN [Users] AS [u] ON [p].[CreatedBy] = [u].[Id]
+LEFT JOIN [Users] AS [u0] ON [p].[ModifiedBy] = [u0].[Id]
+2025-03-20 09:32:43.615 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.AdminProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:43.621 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY) in 15.6422ms
+2025-03-20 09:32:43.622 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:32:43.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:32:43.624 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - 200 null application/json; charset=utf-8 28.7733ms
+2025-03-20 09:32:43.627 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:32:43.631 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:32:43.632 +05:30 [INF] Route matched with {action = "AdminViewProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AdminViewProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:32:43.637 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName], [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName], [u0].[Id], [u0].[Email], [u0].[IsBlocked], [u0].[Password], [u0].[PhoneNo], [u0].[RefreshToken], [u0].[RefreshTokenExpiry], [u0].[Role], [u0].[UserName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+LEFT JOIN [Users] AS [u] ON [p].[CreatedBy] = [u].[Id]
+LEFT JOIN [Users] AS [u0] ON [p].[ModifiedBy] = [u0].[Id]
+2025-03-20 09:32:43.641 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.AdminProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:32:43.643 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY) in 9.953ms
+2025-03-20 09:32:43.645 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:32:43.646 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - 200 null application/json; charset=utf-8 23.4074ms
+2025-03-20 09:33:26.344 +05:30 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-20 09:33:26.602 +05:30 [INF] Now listening on: https://localhost:7294
+2025-03-20 09:33:26.605 +05:30 [INF] Now listening on: http://localhost:5174
+2025-03-20 09:33:26.710 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 09:33:26.712 +05:30 [INF] Hosting environment: Development
+2025-03-20 09:33:26.713 +05:30 [INF] Content root path: C:\Users\DELL\OneDrive\Desktop\Ecommerce Dotnet\STEPIFY
+2025-03-20 09:33:28.549 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - null null
+2025-03-20 09:33:28.733 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - 200 null text/html;charset=utf-8 194.1882ms
+2025-03-20 09:33:28.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-20 09:33:28.761 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.js - null null
+2025-03-20 09:33:28.771 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.js - 200 null application/javascript;charset=utf-8 9.3789ms
+2025-03-20 09:33:28.780 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - null null
+2025-03-20 09:33:28.785 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 25.1531ms
+2025-03-20 09:33:28.831 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.1967ms
+2025-03-20 09:33:28.883 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - null null
+2025-03-20 09:33:28.916 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.7153ms
+2025-03-20 09:33:44.615 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:33:44.623 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:33:44.616 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:33:44.617 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:33:44.616 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:33:44.616 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:33:44.615 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/WishList/getWishlist - null null
+2025-03-20 09:33:44.628 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/WishList/getWishlist - null null
+2025-03-20 09:33:44.639 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.638 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.638 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.639 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.641 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.643 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.646 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.649 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.653 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 204 null null 36.6377ms
+2025-03-20 09:33:44.653 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - 204 null null 37.3154ms
+2025-03-20 09:33:44.653 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - 204 null null 33.2367ms
+2025-03-20 09:33:44.661 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:33:44.653 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - 204 null null 35.9516ms
+2025-03-20 09:33:44.653 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/AllProducts - 204 null null 37.1139ms
+2025-03-20 09:33:44.678 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.654 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 204 null null 38.2438ms
+2025-03-20 09:33:44.685 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 204 null null 24.8743ms
+2025-03-20 09:33:44.681 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:33:44.684 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:33:44.655 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/WishList/getWishlist - 204 null null 39.6732ms
+2025-03-20 09:33:44.656 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/WishList/getWishlist - 204 null null 27.9096ms
+2025-03-20 09:33:44.666 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:33:44.686 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/WishList/getWishlist - null null
+2025-03-20 09:33:44.697 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.697 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.701 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.704 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.705 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 204 null null 38.8584ms
+2025-03-20 09:33:44.892 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:33:44.892 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:33:44.894 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2025-03-20 09:33:44.914 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-03-20 09:33:44.920 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/WishList/getWishlist - 403 0 null 234.3742ms
+2025-03-20 09:33:44.927 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/WishList/getWishlist - null null
+2025-03-20 09:33:44.935 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:44.942 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2025-03-20 09:33:44.944 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-03-20 09:33:44.944 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:33:44.944 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:33:44.947 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/WishList/getWishlist - 403 0 null 19.6541ms
+2025-03-20 09:33:46.471 +05:30 [WRN] Entity 'Products' has a global query filter defined and is the required end of a relationship with the entity 'CartItems'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-03-20 09:33:46.474 +05:30 [WRN] Entity 'Products' has a global query filter defined and is the required end of a relationship with the entity 'WishList'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-03-20 09:33:48.010 +05:30 [INF] Executed DbCommand (68ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:33:48.010 +05:30 [INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:33:48.319 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:33:48.319 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:33:48.365 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:33:48.365 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:33:48.370 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 3411.0119ms
+2025-03-20 09:33:48.371 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 3421.0306ms
+2025-03-20 09:33:48.373 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:48.378 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:48.382 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:33:48.384 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:33:48.385 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:33:48.386 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:33:48.395 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:33:48.397 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:33:48.404 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 3722.7525ms
+2025-03-20 09:33:48.404 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 3720.1064ms
+2025-03-20 09:33:48.503 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:33:48.503 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:33:48.509 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:33:48.510 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:33:48.514 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 113.7773ms
+2025-03-20 09:33:48.514 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 111.6534ms
+2025-03-20 09:33:48.516 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:33:48.516 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:33:48.517 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:33:48.518 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:33:48.520 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:48.523 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:48.524 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 159.3117ms
+2025-03-20 09:33:48.526 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 160.5191ms
+2025-03-20 09:33:48.527 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:33:48.528 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:33:48.536 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:33:48.537 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:33:48.543 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:33:48.547 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:33:48.550 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:33:48.552 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:33:48.554 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 14.9159ms
+2025-03-20 09:33:48.554 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 14.1458ms
+2025-03-20 09:33:48.555 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/AllProducts - null null
+2025-03-20 09:33:48.556 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - null null
+2025-03-20 09:33:48.556 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:33:48.558 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:33:48.560 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:48.562 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:33:48.563 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 47.4731ms
+2025-03-20 09:33:48.564 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 47.6875ms
+2025-03-20 09:33:48.565 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:33:48.566 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:33:48.572 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:33:48.573 +05:30 [INF] Route matched with {action = "GetPaginated", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetPaginated(Int32, Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:33:48.582 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+2025-03-20 09:33:48.585 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p1].[Id], [p1].[Brand], [p1].[CategoryId], [p1].[Color], [p1].[CreatedBy], [p1].[CreatedDate], [p1].[Details], [p1].[Image], [p1].[IsDeleted], [p1].[ModifiedBy], [p1].[ModifiedDate], [p1].[OldPrice], [p1].[Price], [p1].[ProductName], [p1].[Seller], [p1].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM (
+    SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+    FROM [Products] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY [p].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [p1]
+INNER JOIN [ProductCategory] AS [p0] ON [p1].[CategoryId] = [p0].[Id]
+ORDER BY [p1].[Id]
+2025-03-20 09:33:48.589 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:33:48.595 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:33:48.596 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY) in 19.6222ms
+2025-03-20 09:33:48.598 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY) in 19.9623ms
+2025-03-20 09:33:48.600 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetAllProducts (STEPIFY)'
+2025-03-20 09:33:48.601 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.GetPaginated (STEPIFY)'
+2025-03-20 09:33:48.603 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/AllProducts - 200 null application/json; charset=utf-8 48.4994ms
+2025-03-20 09:33:48.606 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/PaginatedProducts?PageNum=1&PageSize=8 - 200 null application/json; charset=utf-8 49.8725ms
+2025-03-20 09:34:13.844 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Authentication/Login - null null
+2025-03-20 09:34:13.848 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:13.850 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Authentication/Login - 204 null null 7.3955ms
+2025-03-20 09:34:13.853 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7294/api/Authentication/Login - application/json 46
+2025-03-20 09:34:13.857 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:13.859 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.AuthenticationController.Login (STEPIFY)'
+2025-03-20 09:34:13.868 +05:30 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(STEPIFY.DTOs.RequestDTOs.LoginDTO) on controller STEPIFY.Controllers.AuthenticationController (STEPIFY).
+2025-03-20 09:34:13.925 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__Email_0
+2025-03-20 09:34:13.965 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__Email_0
+2025-03-20 09:34:14.464 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [RefreshToken] = @p0, [RefreshTokenExpiry] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-03-20 09:34:14.499 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[STEPIFY.DTOs.ResponseDTOs.LoginResponseDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-20 09:34:14.514 +05:30 [INF] Executed action STEPIFY.Controllers.AuthenticationController.Login (STEPIFY) in 644.7681ms
+2025-03-20 09:34:14.517 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.AuthenticationController.Login (STEPIFY)'
+2025-03-20 09:34:14.518 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7294/api/Authentication/Login - 200 null application/json; charset=utf-8 665.6875ms
+2025-03-20 09:34:14.564 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:34:14.567 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:34:14.566 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Order/GetAllOrders - null null
+2025-03-20 09:34:14.568 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Order/CalculateRevenue - null null
+2025-03-20 09:34:14.603 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.595 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.580 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.613 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Order/GetAllOrders - 204 null null 46.9277ms
+2025-03-20 09:34:14.614 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.616 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/ProductViewAdmin - 204 null null 49.6734ms
+2025-03-20 09:34:14.632 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Order/CalculateRevenue - 204 null null 65.2438ms
+2025-03-20 09:34:14.622 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/ProductViewAdmin - 204 null null 58.3613ms
+2025-03-20 09:34:14.565 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/User/TogetAllUsers - null null
+2025-03-20 09:34:14.577 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/User/TogetAllUsers - null null
+2025-03-20 09:34:14.584 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Order/GetAllOrders - null null
+2025-03-20 09:34:14.591 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Order/CalculateRevenue - null null
+2025-03-20 09:34:14.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Order/GetAllOrders - null null
+2025-03-20 09:34:14.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:34:14.635 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Order/CalculateRevenue - null null
+2025-03-20 09:34:14.644 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.648 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.649 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.650 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.652 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.657 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/User/TogetAllUsers - 204 null null 92.5347ms
+2025-03-20 09:34:14.661 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/User/TogetAllUsers - null null
+2025-03-20 09:34:14.658 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/User/TogetAllUsers - 204 null null 81.4781ms
+2025-03-20 09:34:14.658 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Order/GetAllOrders - 204 null null 75.3422ms
+2025-03-20 09:34:14.660 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Order/CalculateRevenue - 204 null null 69.2913ms
+2025-03-20 09:34:14.654 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.656 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.664 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.OrderController.GetAllOrders (STEPIFY)'
+2025-03-20 09:34:14.665 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.674 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:34:14.675 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.OrderController.RevenueCalculation (STEPIFY)'
+2025-03-20 09:34:14.677 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.UserController.GetFull (STEPIFY)'
+2025-03-20 09:34:14.681 +05:30 [INF] Route matched with {action = "AdminViewProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AdminViewProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:34:14.682 +05:30 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller STEPIFY.Controllers.OrderController (STEPIFY).
+2025-03-20 09:34:14.684 +05:30 [INF] Route matched with {action = "RevenueCalculation", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RevenueCalculation() on controller STEPIFY.Controllers.OrderController (STEPIFY).
+2025-03-20 09:34:14.687 +05:30 [INF] Route matched with {action = "GetFull", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFull() on controller STEPIFY.Controllers.UserController (STEPIFY).
+2025-03-20 09:34:14.720 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Role] = N'User'
+2025-03-20 09:34:14.732 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.UserViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:34:14.739 +05:30 [INF] Executed action STEPIFY.Controllers.UserController.GetFull (STEPIFY) in 48.0357ms
+2025-03-20 09:34:14.740 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.UserController.GetFull (STEPIFY)'
+2025-03-20 09:34:14.744 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/User/TogetAllUsers - 200 null application/json; charset=utf-8 83.1268ms
+2025-03-20 09:34:14.745 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/User/TogetAllUsers - null null
+2025-03-20 09:34:14.749 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+FROM [OrderItems] AS [o]
+2025-03-20 09:34:14.750 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.754 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.UserController.GetFull (STEPIFY)'
+2025-03-20 09:34:14.754 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName], [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName], [u0].[Id], [u0].[Email], [u0].[IsBlocked], [u0].[Password], [u0].[PhoneNo], [u0].[RefreshToken], [u0].[RefreshTokenExpiry], [u0].[Role], [u0].[UserName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+LEFT JOIN [Users] AS [u] ON [p].[CreatedBy] = [u].[Id]
+LEFT JOIN [Users] AS [u0] ON [p].[ModifiedBy] = [u0].[Id]
+2025-03-20 09:34:14.755 +05:30 [INF] Route matched with {action = "GetFull", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFull() on controller STEPIFY.Controllers.UserController (STEPIFY).
+2025-03-20 09:34:14.758 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:34:14.766 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Role] = N'User'
+2025-03-20 09:34:14.771 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.UserViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:34:14.772 +05:30 [INF] Executed action STEPIFY.Controllers.UserController.GetFull (STEPIFY) in 9.5738ms
+2025-03-20 09:34:14.774 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.UserController.GetFull (STEPIFY)'
+2025-03-20 09:34:14.776 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/User/TogetAllUsers - 200 null application/json; charset=utf-8 31.2788ms
+2025-03-20 09:34:14.779 +05:30 [INF] Executed action STEPIFY.Controllers.OrderController.RevenueCalculation (STEPIFY) in 89.6531ms
+2025-03-20 09:34:14.781 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.AdminProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:34:14.781 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Order/CalculateRevenue - null null
+2025-03-20 09:34:14.784 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.OrderController.RevenueCalculation (STEPIFY)'
+2025-03-20 09:34:14.787 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.787 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Order/CalculateRevenue - 200 null application/json; charset=utf-8 153.374ms
+2025-03-20 09:34:14.789 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.OrderController.RevenueCalculation (STEPIFY)'
+2025-03-20 09:34:14.796 +05:30 [INF] Route matched with {action = "RevenueCalculation", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RevenueCalculation() on controller STEPIFY.Controllers.OrderController (STEPIFY).
+2025-03-20 09:34:14.796 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[AddressId], [o].[OrderDate], [o].[Status], [o].[TotalAmount], [o].[TransactionId], [o].[UserId], [a].[Id], [a].[FullName], [a].[HouseName], [a].[IsDeleted], [a].[LandMark], [a].[PhoneNumber], [a].[Pincode], [a].[Place], [a].[UserId], [s].[Id], [s].[OrderId], [s].[ProductId], [s].[ProductImage], [s].[ProductName], [s].[Quantity], [s].[TotalPrice], [s].[Id0], [s].[Brand], [s].[CategoryId], [s].[Color], [s].[CreatedBy], [s].[CreatedDate], [s].[Details], [s].[Image], [s].[IsDeleted], [s].[ModifiedBy], [s].[ModifiedDate], [s].[OldPrice], [s].[Price], [s].[ProductName0], [s].[Seller], [s].[Stock]
+FROM [Order] AS [o]
+INNER JOIN [Address] AS [a] ON [o].[AddressId] = [a].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[OrderId], [o0].[ProductId], [o0].[ProductImage], [o0].[ProductName], [o0].[Quantity], [o0].[TotalPrice], [p0].[Id] AS [Id0], [p0].[Brand], [p0].[CategoryId], [p0].[Color], [p0].[CreatedBy], [p0].[CreatedDate], [p0].[Details], [p0].[Image], [p0].[IsDeleted], [p0].[ModifiedBy], [p0].[ModifiedDate], [p0].[OldPrice], [p0].[Price], [p0].[ProductName] AS [ProductName0], [p0].[Seller], [p0].[Stock]
+    FROM [OrderItems] AS [o0]
+    LEFT JOIN (
+        SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+        FROM [Products] AS [p]
+        WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ) AS [p0] ON [o0].[ProductId] = [p0].[Id]
+) AS [s] ON [o].[Id] = [s].[OrderId]
+ORDER BY [o].[Id], [a].[Id], [s].[Id]
+2025-03-20 09:34:14.801 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY) in 116.5822ms
+2025-03-20 09:34:14.803 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+FROM [OrderItems] AS [o]
+2025-03-20 09:34:14.803 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:34:14.805 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:34:14.807 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:34:14.810 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.811 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - 200 null application/json; charset=utf-8 188.6973ms
+2025-03-20 09:34:14.813 +05:30 [INF] Executed action STEPIFY.Controllers.OrderController.RevenueCalculation (STEPIFY) in 14.6607ms
+2025-03-20 09:34:14.814 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:34:14.817 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.OrderController.RevenueCalculation (STEPIFY)'
+2025-03-20 09:34:14.818 +05:30 [INF] Route matched with {action = "AdminViewProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AdminViewProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:34:14.818 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Order/CalculateRevenue - 200 null application/json; charset=utf-8 37.7922ms
+2025-03-20 09:34:14.824 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName], [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName], [u0].[Id], [u0].[Email], [u0].[IsBlocked], [u0].[Password], [u0].[PhoneNo], [u0].[RefreshToken], [u0].[RefreshTokenExpiry], [u0].[Role], [u0].[UserName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+LEFT JOIN [Users] AS [u] ON [p].[CreatedBy] = [u].[Id]
+LEFT JOIN [Users] AS [u0] ON [p].[ModifiedBy] = [u0].[Id]
+2025-03-20 09:34:14.830 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.AdminProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:34:14.832 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY) in 12.4533ms
+2025-03-20 09:34:14.834 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:34:14.835 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - 200 null application/json; charset=utf-8 31.81ms
+2025-03-20 09:34:14.894 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ViewUserOrderDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:34:14.912 +05:30 [INF] Executed action STEPIFY.Controllers.OrderController.GetAllOrders (STEPIFY) in 225.7964ms
+2025-03-20 09:34:14.914 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Order/GetAllOrders - null null
+2025-03-20 09:34:14.916 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.OrderController.GetAllOrders (STEPIFY)'
+2025-03-20 09:34:14.922 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:14.925 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Order/GetAllOrders - 200 null application/json; charset=utf-8 302.8799ms
+2025-03-20 09:34:14.928 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.OrderController.GetAllOrders (STEPIFY)'
+2025-03-20 09:34:14.936 +05:30 [INF] Route matched with {action = "GetAllOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrders() on controller STEPIFY.Controllers.OrderController (STEPIFY).
+2025-03-20 09:34:14.949 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[AddressId], [o].[OrderDate], [o].[Status], [o].[TotalAmount], [o].[TransactionId], [o].[UserId], [a].[Id], [a].[FullName], [a].[HouseName], [a].[IsDeleted], [a].[LandMark], [a].[PhoneNumber], [a].[Pincode], [a].[Place], [a].[UserId], [s].[Id], [s].[OrderId], [s].[ProductId], [s].[ProductImage], [s].[ProductName], [s].[Quantity], [s].[TotalPrice], [s].[Id0], [s].[Brand], [s].[CategoryId], [s].[Color], [s].[CreatedBy], [s].[CreatedDate], [s].[Details], [s].[Image], [s].[IsDeleted], [s].[ModifiedBy], [s].[ModifiedDate], [s].[OldPrice], [s].[Price], [s].[ProductName0], [s].[Seller], [s].[Stock]
+FROM [Order] AS [o]
+INNER JOIN [Address] AS [a] ON [o].[AddressId] = [a].[Id]
+LEFT JOIN (
+    SELECT [o0].[Id], [o0].[OrderId], [o0].[ProductId], [o0].[ProductImage], [o0].[ProductName], [o0].[Quantity], [o0].[TotalPrice], [p0].[Id] AS [Id0], [p0].[Brand], [p0].[CategoryId], [p0].[Color], [p0].[CreatedBy], [p0].[CreatedDate], [p0].[Details], [p0].[Image], [p0].[IsDeleted], [p0].[ModifiedBy], [p0].[ModifiedDate], [p0].[OldPrice], [p0].[Price], [p0].[ProductName] AS [ProductName0], [p0].[Seller], [p0].[Stock]
+    FROM [OrderItems] AS [o0]
+    LEFT JOIN (
+        SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+        FROM [Products] AS [p]
+        WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ) AS [p0] ON [o0].[ProductId] = [p0].[Id]
+) AS [s] ON [o].[Id] = [s].[OrderId]
+ORDER BY [o].[Id], [a].[Id], [s].[Id]
+2025-03-20 09:34:14.966 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.ViewUserOrderDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:34:14.971 +05:30 [INF] Executed action STEPIFY.Controllers.OrderController.GetAllOrders (STEPIFY) in 30.1388ms
+2025-03-20 09:34:14.972 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.OrderController.GetAllOrders (STEPIFY)'
+2025-03-20 09:34:14.973 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Order/GetAllOrders - 200 null application/json; charset=utf-8 60.4656ms
+2025-03-20 09:34:18.224 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:34:18.230 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:18.232 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:34:18.233 +05:30 [INF] Route matched with {action = "AdminViewProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AdminViewProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:34:18.241 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName], [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName], [u0].[Id], [u0].[Email], [u0].[IsBlocked], [u0].[Password], [u0].[PhoneNo], [u0].[RefreshToken], [u0].[RefreshTokenExpiry], [u0].[Role], [u0].[UserName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+LEFT JOIN [Users] AS [u] ON [p].[CreatedBy] = [u].[Id]
+LEFT JOIN [Users] AS [u0] ON [p].[ModifiedBy] = [u0].[Id]
+2025-03-20 09:34:18.248 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.AdminProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:34:18.250 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY) in 15.5448ms
+2025-03-20 09:34:18.252 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:34:18.252 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:34:18.254 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:34:18.255 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - 200 null application/json; charset=utf-8 31.6882ms
+2025-03-20 09:34:18.256 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:34:18.260 +05:30 [INF] Route matched with {action = "AdminViewProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AdminViewProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:34:18.267 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName], [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName], [u0].[Id], [u0].[Email], [u0].[IsBlocked], [u0].[Password], [u0].[PhoneNo], [u0].[RefreshToken], [u0].[RefreshTokenExpiry], [u0].[Role], [u0].[UserName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+LEFT JOIN [Users] AS [u] ON [p].[CreatedBy] = [u].[Id]
+LEFT JOIN [Users] AS [u0] ON [p].[ModifiedBy] = [u0].[Id]
+2025-03-20 09:34:18.273 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.AdminProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:34:18.275 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY) in 11.8511ms
+2025-03-20 09:34:18.277 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:34:18.278 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - 200 null application/json; charset=utf-8 26.9002ms
+2025-03-20 09:35:06.429 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/AddProduct - null null
+2025-03-20 09:35:06.443 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:35:06.445 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/AddProduct - 204 null null 16.1236ms
+2025-03-20 09:35:06.450 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7294/api/Product/AddProduct - multipart/form-data; boundary=----WebKitFormBoundary5MVS0QhLtmAqaFoP 32812
+2025-03-20 09:35:06.462 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:35:06.464 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.AddProduct (STEPIFY)'
+2025-03-20 09:35:06.473 +05:30 [INF] Route matched with {action = "AddProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddProduct(STEPIFY.DTOs.RequestDTOs.ProductAddDTO) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:35:06.550 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__productData_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategory] AS [p]
+        WHERE [p].[Id] = @__productData_CategoryId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-03-20 09:35:06.591 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__name_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [p].[ProductName] LIKE @__name_0_contains ESCAPE N'\'
+2025-03-20 09:35:08.721 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__product_ProductName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [p].[ProductName] = @__product_ProductName_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-03-20 09:35:08.814 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Brand], [CategoryId], [Color], [CreatedBy], [CreatedDate], [Details], [Image], [IsDeleted], [ModifiedBy], [ModifiedDate], [OldPrice], [Price], [ProductName], [Seller], [Stock])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2025-03-20 09:35:08.835 +05:30 [INF] Product added successfully: {"Id":24,"TempField":0,"ProductName":"ijasn","Price":1999,"OldPrice":1000,"Image":"https://res.cloudinary.com/dvguhmvxg/image/upload/v1742443507/kn4ybicjzetxbjyheqqb.webp","CategoryId":300,"Seller":"tyuio","Brand":"sparex","Color":"ghj","IsDeleted":false,"CreatedBy":3,"CreatedDate":"2025-03-20T04:05:06.5956233Z","ModifiedBy":null,"ModifiedDate":null,"CreatedByAdmin":null,"ModifiedByAdmin":null,"Stock":23,"Details":"6tjggjcxbncajkf","ProductCategory":null,"WishList":null,"CartItems":null,"OrderItems":[],"$type":"Products"}
+2025-03-20 09:35:08.856 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:35:08.857 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.AddProduct (STEPIFY) in 2381.7374ms
+2025-03-20 09:35:08.859 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.AddProduct (STEPIFY)'
+2025-03-20 09:35:08.860 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7294/api/Product/AddProduct - 200 null application/json; charset=utf-8 2410.4973ms
+2025-03-20 09:35:08.868 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:35:08.870 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:35:08.871 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/ProductViewAdmin - 204 null null 2.9431ms
+2025-03-20 09:35:08.873 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:35:08.875 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:35:08.876 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:35:08.877 +05:30 [INF] Route matched with {action = "AdminViewProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AdminViewProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:35:08.884 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName], [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName], [u0].[Id], [u0].[Email], [u0].[IsBlocked], [u0].[Password], [u0].[PhoneNo], [u0].[RefreshToken], [u0].[RefreshTokenExpiry], [u0].[Role], [u0].[UserName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+LEFT JOIN [Users] AS [u] ON [p].[CreatedBy] = [u].[Id]
+LEFT JOIN [Users] AS [u0] ON [p].[ModifiedBy] = [u0].[Id]
+2025-03-20 09:35:08.902 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.AdminProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:35:08.906 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY) in 27.3719ms
+2025-03-20 09:35:08.908 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:35:08.909 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - 200 null application/json; charset=utf-8 36.4976ms
+2025-03-20 09:35:12.940 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7294/api/Product/DeleteProduct?productId=24 - null null
+2025-03-20 09:35:12.943 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:35:12.944 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7294/api/Product/DeleteProduct?productId=24 - 204 null null 4.4858ms
+2025-03-20 09:35:12.946 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7294/api/Product/DeleteProduct?productId=24 - null null
+2025-03-20 09:35:12.950 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:35:12.952 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.DeleteProduct (STEPIFY)'
+2025-03-20 09:35:12.955 +05:30 [INF] Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteProduct(Int32) on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:35:12.971 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__productId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__productId_0
+2025-03-20 09:35:12.982 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [IsDeleted] = @p0, [ModifiedBy] = @p1, [ModifiedDate] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2025-03-20 09:35:12.985 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:35:12.986 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.DeleteProduct (STEPIFY) in 28.7534ms
+2025-03-20 09:35:12.987 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.DeleteProduct (STEPIFY)'
+2025-03-20 09:35:12.988 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7294/api/Product/DeleteProduct?productId=24 - 200 null application/json; charset=utf-8 42.1902ms
+2025-03-20 09:35:12.993 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - null null
+2025-03-20 09:35:12.995 +05:30 [INF] CORS policy execution successful.
+2025-03-20 09:35:12.996 +05:30 [INF] Executing endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:35:12.996 +05:30 [INF] Route matched with {action = "AdminViewProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AdminViewProducts() on controller STEPIFY.Controllers.ProductController (STEPIFY).
+2025-03-20 09:35:13.001 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Brand], [p].[CategoryId], [p].[Color], [p].[CreatedBy], [p].[CreatedDate], [p].[Details], [p].[Image], [p].[IsDeleted], [p].[ModifiedBy], [p].[ModifiedDate], [p].[OldPrice], [p].[Price], [p].[ProductName], [p].[Seller], [p].[Stock], [p0].[Id], [p0].[CategoryName], [u].[Id], [u].[Email], [u].[IsBlocked], [u].[Password], [u].[PhoneNo], [u].[RefreshToken], [u].[RefreshTokenExpiry], [u].[Role], [u].[UserName], [u0].[Id], [u0].[Email], [u0].[IsBlocked], [u0].[Password], [u0].[PhoneNo], [u0].[RefreshToken], [u0].[RefreshTokenExpiry], [u0].[Role], [u0].[UserName]
+FROM [Products] AS [p]
+INNER JOIN [ProductCategory] AS [p0] ON [p].[CategoryId] = [p0].[Id]
+LEFT JOIN [Users] AS [u] ON [p].[CreatedBy] = [u].[Id]
+LEFT JOIN [Users] AS [u0] ON [p].[ModifiedBy] = [u0].[Id]
+2025-03-20 09:35:13.004 +05:30 [INF] Executing ObjectResult, writing value of type 'STEPIFY.DTOs.ResultDTO.ResultDTO`1[[System.Collections.Generic.List`1[[STEPIFY.DTOs.ResponseDTOs.AdminProductViewDTO, STEPIFY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-20 09:35:13.006 +05:30 [INF] Executed action STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY) in 8.4403ms
+2025-03-20 09:35:13.007 +05:30 [INF] Executed endpoint 'STEPIFY.Controllers.ProductController.AdminViewProducts (STEPIFY)'
+2025-03-20 09:35:13.008 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7294/api/Product/ProductViewAdmin - 200 null application/json; charset=utf-8 15.971ms

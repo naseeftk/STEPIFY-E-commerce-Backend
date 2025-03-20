@@ -1,0 +1,252 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "images/7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.hhwkdrgro5.jpeg",
+      "AssetFile": "images/7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 02:03:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hhwkdrgro5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI="
+        },
+        {
+          "Name": "label",
+          "Value": "images/7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg"
+        }
+      ]
+    },
+    {
+      "Route": "images/7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg",
+      "AssetFile": "images/7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 02:03:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI="
+        }
+      ]
+    },
+    {
+      "Route": "images/cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.hhwkdrgro5.jpeg",
+      "AssetFile": "images/cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 02:00:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hhwkdrgro5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI="
+        },
+        {
+          "Name": "label",
+          "Value": "images/cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg"
+        }
+      ]
+    },
+    {
+      "Route": "images/cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg",
+      "AssetFile": "images/cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 02:00:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI="
+        }
+      ]
+    },
+    {
+      "Route": "images/d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.c1woqvi5wf.jpeg",
+      "AssetFile": "images/d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3502"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ME5IzG2zeoNQcn4m12Wak1MlVoTEbpVlusZ+90ss0Ik=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 06:16:02 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c1woqvi5wf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ME5IzG2zeoNQcn4m12Wak1MlVoTEbpVlusZ+90ss0Ik="
+        },
+        {
+          "Name": "label",
+          "Value": "images/d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg"
+        }
+      ]
+    },
+    {
+      "Route": "images/d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg",
+      "AssetFile": "images/d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3502"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ME5IzG2zeoNQcn4m12Wak1MlVoTEbpVlusZ+90ss0Ik=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 06:16:02 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ME5IzG2zeoNQcn4m12Wak1MlVoTEbpVlusZ+90ss0Ik="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\images\\7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg",
+      "PackagePath": "staticwebassets\\images\\7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\images\\cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg",
+      "PackagePath": "staticwebassets\\images\\cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\OneDrive\\Desktop\\Ecommerce Dotnet\\STEPIFY\\wwwroot\\images\\d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg",
+      "PackagePath": "staticwebassets\\images\\d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.STEPIFY.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.STEPIFY.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.STEPIFY.props",
+      "PackagePath": "build\\STEPIFY.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.STEPIFY.props",
+      "PackagePath": "buildMultiTargeting\\STEPIFY.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.STEPIFY.props",
+      "PackagePath": "buildTransitive\\STEPIFY.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,58 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>STEPIFY</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/STEPIFY</BasePath>
+      <RelativePath>images/7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hhwkdrgro5</Fingerprint>
+      <Integrity>dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7dc3534e-5211-44bd-8144-e3722caa86be_Nike Air Monarch IV.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>STEPIFY</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/STEPIFY</BasePath>
+      <RelativePath>images/cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hhwkdrgro5</Fingerprint>
+      <Integrity>dRq5BtljY+owyzYzk4TTTXwscrvjl4Nrv7NkKIM1GkI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cf7964de-1cb9-4a22-8f98-4af9f356843c_Nike Air Monarch IV.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>STEPIFY</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/STEPIFY</BasePath>
+      <RelativePath>images/d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>c1woqvi5wf</Fingerprint>
+      <Integrity>ME5IzG2zeoNQcn4m12Wak1MlVoTEbpVlusZ+90ss0Ik=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d3047bd2-a0d1-41b3-bee8-72c3cf313474_GAZELLE BOLD SHOES-2.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>
